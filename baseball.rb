@@ -50,3 +50,7 @@ EOS
 
 batter = gets.to_i
 puts batter
+
+if pitcher == batter
+  p "ホームラン！"
+end
