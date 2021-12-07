@@ -73,3 +73,5 @@ elsif record < 30
 else
   p "アウト！"
 end
+
+# 出塁方式を記述する
