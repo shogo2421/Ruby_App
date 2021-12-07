@@ -37,6 +37,7 @@ puts <<"EOS"
 EOS
 
 pitcher = gets.to_i
+print "選択したコース："
 puts pitcher
 
 puts "打者：狙うコースを選択してください"
@@ -49,8 +50,26 @@ puts <<"EOS"
 EOS
 
 batter = gets.to_i
+print "選択したコース："
 puts batter
 
 if pitcher == batter
+  record = rand(50)
+else
+  record = rand(100)
+end
+
+print "打球："
+p record
+
+if record < 2
   p "ホームラン！"
+elsif record < 5
+  p "スリーベース！"
+elsif record < 10
+  p "ツーベース！"
+elsif record < 30
+  p "ヒット！"
+else
+  p "アウト！"
 end
