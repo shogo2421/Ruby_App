@@ -37,6 +37,10 @@ puts <<"EOS"
 EOS
 
 pitcher = gets.to_i
+if pitcher <= 0 || pitcher > 9
+  p "無効な値です"
+  exit
+end
 print "選択したコース："
 puts pitcher
 
@@ -50,6 +54,10 @@ puts <<"EOS"
 EOS
 
 batter = gets.to_i
+if batter <= 0 || batter > 9
+  p "無効な値です"
+  exit
+end
 print "選択したコース："
 puts batter
 
