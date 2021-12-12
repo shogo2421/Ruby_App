@@ -28,7 +28,7 @@
 =end
 
 # ruby baseball.rb
-puts "投手：投球コースを選択してください"
+puts "投手:投球コースを選択してください"
 puts <<"EOS"
 -------
 |1|2|3|
@@ -42,10 +42,10 @@ if pitcher <= 0 || pitcher > 9
   puts "無効な値です"
   exit
 end
-print "選択したコース："
+print "選択したコース:"
 puts pitcher
 
-puts "打者：狙うコースを選択してください"
+puts "打者:狙うコースを選択してください"
 puts <<"EOS"
 -------
 |1|2|3|
@@ -59,7 +59,7 @@ if batter <= 0 || batter > 9
   puts "無効な値です"
   exit
 end
-print "選択したコース："
+print "選択したコース:"
 puts batter
 
 if pitcher == batter
@@ -68,7 +68,7 @@ else
   record = rand(100)
 end
 
-print "打球："
+print "打球:"
 p record
 
 if record < 2
